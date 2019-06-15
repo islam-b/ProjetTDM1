@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="com.example.projettdm1.MainActivity">
+
+    <item
+            android:id="@+id/favorite_btn"
+            android:icon="@drawable/favorite_white"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom" android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:title="like"/>
+    <item
+            android:id="@+id/mode_btn"
+            android:icon="?attr/lightMode"
+            android:orderInCategory="100"
+            app:showAsAction="ifRoom" android:layout_height="wrap_content" android:layout_width="wrap_content"
+            android:title="search"/>
+
+    <item
+          android:id="@+id/action_settings"
+          android:title="@string/lang"
+          android:orderInCategory="100"
+          app:showAsAction="never" android:layout_height="wrap_content" android:layout_width="wrap_content">
+        <menu>
+            <item
+                    android:id="@+id/fr_btn"
+                    android:orderInCategory="100"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"
+                    android:title="@string/fr"/>
+            <item
+                    android:id="@+id/ar_btn"
+                    android:orderInCategory="100"
+                    android:layout_height="wrap_content" android:layout_width="wrap_content"
+                    android:title="@string/ar"/>
+        </menu>
+    </item>
+</menu>
